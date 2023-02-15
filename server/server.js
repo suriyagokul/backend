@@ -29,7 +29,8 @@ app.use(bodyParser.urlencoded({ extended: true }));
 //   next();
 // });
 
-const port = process.env.PORT || 3001
+const port = process.env.PORT || 3001;
+const host = https://mern-health-app.onrender.com/
 
 /** Http GET Request */
 app.get("/", (req, res) => {
@@ -60,7 +61,7 @@ app.use("/api", router);
 connect()
   .then(() => {
     try {
-      app.listen(port, () => {
+      app.listen(port, host () => {
         console.log(`Server Connected to http://localhost:${port}`);
       });
     } catch (error) {
