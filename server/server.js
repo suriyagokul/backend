@@ -61,7 +61,7 @@ app.use("/api", router);
 connect()
   .then(() => {
     try {
-      app.listen(port, host () => {
+      app.listen(port, host, () => {
         console.log(`Server Connected to http://localhost:${port}`);
       });
     } catch (error) {
