@@ -30,7 +30,7 @@ app.use(bodyParser.urlencoded({ extended: true }));
 // });
 
 const port = process.env.PORT || 3001;
-const host = https://mern-health-app.onrender.com/
+const host = "https://mern-health-app.onrender.com/"
 
 /** Http GET Request */
 app.get("/", (req, res) => {
